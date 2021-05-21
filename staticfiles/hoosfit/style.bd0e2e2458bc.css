@@ -1,0 +1,47 @@
+
+.bg {
+    -webkit-animation:slide 3s ease-in-out infinite alternate;
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(255, 153, 0) 50%, #09f 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .8;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .bg2 {
+    -webkit-animation-direction: alternate-reverse;
+    animation-direction: alternate-reverse;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+  }
+  
+  .bg3 {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+  }
+
+@-webkit-keyframes slide {
+    0% {
+        -webkit-transform:translateX(-25%);
+        transform:translateX(-25%);
+    }
+    100% {
+        -webkit-transform:translateX(25%);
+        transform:translateX(25%);
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      -webkit-transform:translateX(-25%);
+      transform:translateX(-25%);
+    }
+    100% {
+        -webkit-transform:translateX(25%);
+        transform:translateX(25%);
+    }
+  }
